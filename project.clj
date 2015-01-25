@@ -1,5 +1,20 @@
-(defproject bigml/sketchy "0.3.0-SNAPSHOT"
+(defproject bigml/sketchy "0.3.0-FACTUAL-SNAPSHOT"
   :description "Sketching algorithms in Clojure"
+  :repositories {
+    "conjars"
+      "http://conjars.org/repo"
+    "factual"
+      "http://maven.corp.factual.com/nexus/content/groups/public/"
+    "releases" {
+      :url "http://maven.corp.factual.com/nexus/content/repositories/releases"
+      :sign-releases false
+    }
+    "snapshots" {
+      :url "http://maven.corp.factual.com/nexus/content/repositories/snapshots"
+      :sign-releases false
+      :snapshots {:update :always}
+    }
+  }
   :url "https://github.com/bigmlcom/sketchy"
   :license {:name "Apache License, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
