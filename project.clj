@@ -1,4 +1,4 @@
-(defproject bigml/sketchy "0.3.0-FACTUAL-SNAPSHOT"
+(defproject bigml/sketchy "0.3.0-factual"
   :description "Sketching algorithms in Clojure"
   :repositories {
     "conjars"
